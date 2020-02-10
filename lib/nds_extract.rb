@@ -28,7 +28,7 @@ total = 0
 #end
 #binding.pry
 while x < nds.size
-  binding.pry
+  #exibinding.pry
   directors_name = nds[x][:name]
   my_results[directors_name] = 0
   i = 0
