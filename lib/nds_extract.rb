@@ -34,5 +34,5 @@ while x < nds.size
   total += my_results[:total_gross]
   x += 1
 end
-my_results[:name] =
+my_results[:name]
 end
