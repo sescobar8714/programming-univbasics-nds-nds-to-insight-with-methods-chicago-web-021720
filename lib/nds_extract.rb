@@ -33,5 +33,5 @@ while x < nds[0][:movies][0][:worldwide_gross].size
   total += my_results[:total_gross]
   x += 1
 end
-my_results[:name] = 
+my_results[:name] =
 end
