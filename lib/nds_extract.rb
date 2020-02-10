@@ -35,7 +35,7 @@ while x < nds.size
   while i < nds[x][:movies].count #[:movies][x][:worldwide_gross]
     my_results[directors_name] += nds[x][:movies][i][:worldwide_gross]
     i += 1
-  end  
+  end
   x += 1
 end
 my_results
