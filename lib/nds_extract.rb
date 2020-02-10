@@ -19,7 +19,6 @@ end
 
 def directors_totals(nds)
 my_results = {}
-i = 0
 x = 0
 total = 0
 
@@ -30,8 +29,13 @@ total = 0
 #binding.pry
 while x < nds.size
   binding.pry
-  my_results[] = nds[i] #[:movies][x][:worldwide_gross]
-  total += my_results[:total_gross]
+  directors_name = nds[x][:name]
+  my_results[directors_name] = 0
+  i = 0
+  while i < nds[x][:movies].count #[:movies][x][:worldwide_gross]
+    my_results[directors_name] += nds[x][:movies][i][:worldwide_gross]
+    i += 1
+  end  
   x += 1
 end
 my_results
